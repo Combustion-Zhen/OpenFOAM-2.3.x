@@ -395,6 +395,17 @@ OPENMPI)
     _foamAddMan     $MPI_ARCH_PATH/share/man
     ;;
 
+SYSTEMMPICH)
+    export FOAM_MPI=mpich-system
+
+    libDir=$CRAY_MPICH2_DIR/lib
+    export MPI_ARCH_PATH=$CRAY_MPICH2_DIR
+    export MPI_ARCH_INC=$CRAY_MPICH2_DIR/include
+
+    _foamAddLib     $libDir
+    unset libDir
+    ;;
+
 MPICH)
     export FOAM_MPI=mpich2-1.1.1p1
     export MPI_HOME=$WM_THIRD_PARTY_DIR/$FOAM_MPI

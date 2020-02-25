@@ -45,10 +45,10 @@ if [ -n "$SCOTCH_ARCH_PATH" ]
 then
     wmake $makeType scotchDecomp
 
-    if [ -d "$FOAM_LIBBIN/$FOAM_MPI" ]
-    then
-        wmakeMpiLib ptscotchDecomp
-    fi
+#    if [ -d "$FOAM_LIBBIN/$FOAM_MPI" ]
+#    then
+#        wmakeMpiLib ptscotchDecomp
+#    fi
 else
     echo
     echo "Skipping scotchDecomp (ptscotchDecomp)"

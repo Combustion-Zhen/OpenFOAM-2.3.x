@@ -5,9 +5,11 @@ EXE_INC = \
     -I$(LIB_SRC)/turbulenceModels/compressible/RAS/lnInclude
 
 EXE_LIBS = \
+    -lincompressibleTurbulenceModel \
     -lincompressibleRASModels \
     -lfluidThermophysicalModels \
     -lspecie \
+    -lcompressibleTurbulenceModel \
     -lcompressibleRASModels \
     -lfiniteVolume \
     -lgenericPatchFields

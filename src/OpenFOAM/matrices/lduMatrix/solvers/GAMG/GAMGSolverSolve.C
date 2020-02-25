@@ -646,6 +646,8 @@ void Foam::GAMGSolver::solveCoarsestLevel
         coarsestCorrField = 0;
         solverPerformance coarseSolverPerf;
 
+        //Info << " no direct " << endl;
+/*
         if (matrixLevels_[coarsestLevel].asymmetric())
         {
             coarseSolverPerf = BICCG
@@ -685,6 +687,7 @@ void Foam::GAMGSolver::solveCoarsestLevel
         {
             coarseSolverPerf.print(Info.masterStream(coarseComm));
         }
+*/
     }
 
     UPstream::warnComm = oldWarn;

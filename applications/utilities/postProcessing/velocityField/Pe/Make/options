@@ -10,10 +10,12 @@ EXE_INC = \
 EXE_LIBS = \
     $(FOAM_LIBBIN)/postCalc.o \
     -lincompressibleTransportModels \
+    -lincompressibleTurbulenceModel \
     -lincompressibleRASModels \
     -lincompressibleLESModels \
     -lfluidThermophysicalModels \
     -lspecie \
+    -lcompressibleTurbulenceModel \
     -lcompressibleRASModels \
     -lcompressibleLESModels \
     -lfiniteVolume \
