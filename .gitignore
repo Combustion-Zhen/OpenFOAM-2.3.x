@@ -84,4 +84,7 @@ doc/Doxygen/DTAGS
 # Ignore the test directory
 /tutorialsTest
 
+# Igmore compilation log
+log.make.*
+
 # end-of-file
